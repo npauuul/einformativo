@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EInformativo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <main class="container-fluid p-0 my-5 my-2">
+
+        <!-- Noticia Destacada -->
+        <section class="row featured-news g-0 mb-4 p-3">
+            <article class="col-12 position-relative">
+                <img src="https://elcomercio.pe/resizer/v2/P3NHOQZBCVBXDOXQTZYBWPFFOA.jpeg?auth=6fe382f20983b76ddfe3c0ebadec4d850438b2dbd70bc136d10d8a714be5c565&width=592&height=334&quality=75&smart=true" alt="Noticia destacada" class="img-fluid w-100">
+                <div class="position-absolute bottom-0 start-0 p-4 text-white featured-content"
+                    style="background: linear-gradient(transparent, rgba(0,0,0,0.8))">
+                    <span class="badge bg-warning mb-2">Todo sobre el feriado largo</span>
+                    <h1 class="display-5"><a href="#" class="text-white text-decoration-none">Semana Santa: Salir de Lima, procesiones, actividades, cierres de vías y desvíos vehiculares</a></h1>
+                    <p class="lead">Los líderes mundiales se reúnen en emergencia...</p>
+                    <div class="text-white">
+                        <small>Por Yan Huaman Huaman · Hace 15 minutos</small>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Contenedor de Noticias -->
+        <section class="container">
+            <div class="row g-4">
+
+                <article class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://elcomercio.pe/resizer/v2/3MMM7YQC45C45L5S4G745IVBSQ.jpg?auth=aadf6d29c022bcb0fb7a9efc0982c592eb9d52593cc01592a1f34718ebb42f84&width=320&height=180&quality=75&smart=true"
+                            class="card-img-top" alt="Noticia 2">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Mundo</span>
+                            <h3 class="h5"><a href="#" class="text-decoration-none">Mario Vargas Llosa</a></h3>
+                            <p class="card-text">Mario Vargas Llosa: la preciosa relación del Nobel con el running y por
+                                qué le parecía “un cómplice de la imaginación” </p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <small class="text-muted">Último minuto</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://elcomercio.pe/resizer/v2/KV2HAEUIBJDLBFNI77ZLC6WXXM.jpg?auth=9294296d0463ad02cf12a6f52a301b89d136984ae4140b7842de4333b9d0eb86&width=385&height=217&quality=75&smart=true"
+                            class="card-img-top" alt="Noticia 1">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Deportes</span>
+                            <h3 class="h5"><a href="#" class="text-decoration-none">LO QUE NO SE VIO DEL TRIUNFO EN
+                                    CUSCO</a></h3>
+                            <p class="card-text">Garcilaso 0-1 Alianza Lima: nueva cábala de Gorosito y la arenga
+                                emotiva a un Enrique en muletas</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <small class="text-muted">Hace 5 horas</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://elcomercio.pe/resizer/v2/BE3AFLKC6REIBIVWW4KW6FQPWY.jpeg?auth=50d7ae830a279a416da71f6c41e4e8520942c1bd5cdad61c09bdce5a7911b8ad&width=610&height=344&quality=75&smart=true"
+                            class="card-img-top" alt="Noticia 3">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Seguridad</span>
+                            <h3 class="h5"><a href="#" class="text-decoration-none">Y QUÉ SANCIONES RECIBIRÁN QUIENES LA
+                                    INCUMPLAN</a></h3>
+                            <p class="card-text">Prohíben dos personas en moto: ¿Cómo se fiscalizará a ocupantes?</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <small class="text-muted">Ayer</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="bg-light py-5 mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <h2 class="mb-3 text-uppercase">Mantente informado</h2>
+                        <p class="mb-4">Suscríbete a nuestro boletín diario y recibe noticias en tu correo electrónico</p>
+                        <form class="input-group">
+                            <input type="email" class="form-control" placeholder="usuario@example.com" required>
+                            <button class="btn btn-danger" type="submit">Suscribirse</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+        $(document).ready(function () {
+            $('#header').load('partials/header.html');
+            $('#footer').load('partials/footer.html');
+        });
+    </script>
+</body>
+
+</html>

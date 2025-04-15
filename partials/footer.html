@@ -1,104 +1,107 @@
-<!-- Bootstrap CSS (agrega esto en tu <head>) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <footer class="box__footer bg-light pt-4">
-        <div class="container">
-          <div class="text-center mb-3">
-            <a href="#" class="btn btn-link text-decoration-none">
-              <img src="/static/images/up.svg" loading="lazy" alt="Volver al inicio" title="Diario Líbero Perú" width="15" height="15">
-              <span class="ms-2">Regresar al inicio</span>
-            </a>
-          </div>
-      
-          <div class="text-center mb-4">
-            <img loading="lazy" src="" alt="Diario Líbero Perú" title="Diario Líbero Perú" width="169" height="48">
-          </div>
-      
+<!-- Bootstrap CSS en el <head> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Footer -->
+  <footer class="box__footer bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <h1 class="h3">EInformativo</h1>
+        </div>
+  
+        <!-- Enlaces de interés -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <h5 class="mb-3">Enlaces de interés</h5>
           <div class="row">
-            <!-- Enlaces de interés -->
-            <div class="col-md-6 col-lg-4 mb-4">
-              <h5>Enlaces de interés</h5>
+            <div class="col-6">
               <ul class="list-unstyled">
                 <li><strong>Fútbol Peruano</strong>
-                  <ul>
-                    <li><a href="https://libero.pe/futbol-peruano/liga-1">Liga 1</a></li>
-                    <li><a href="https://libero.pe/futbol-peruano/liga-1/calculadora-tabla-posiciones-apertura-clausura-acumulado">Calculadora Liga 1</a></li>
-                    <li><a href="https://libero.pe/futbol-internacional/calculadora-eliminatorias-sudamericanas">Calculadora Eliminatorias 2026</a></li>
+                  <ul class="list-unstyled ps-3">
+                    <li><a class="text-white text-decoration-none" href="#">Liga 1</a></li>
+                    <li><a class="text-white text-decoration-none" href="#">Calculadora Liga 1</a></li>
+                    <li><a class="text-white text-decoration-none" href="#">Calculadora Eliminatorias 2026</a></li>
                   </ul>
                 </li>
                 <li><strong>Fútbol Internacional</strong>
-                  <ul>
-                    <li><a href="https://libero.pe/futbol-internacional/copa-libertadores">Copa Libertadores</a></li>
-                    <li><a href="https://libero.pe/futbol-internacional/champions-league">Champions League</a></li>
-                    <li><a href="https://libero.pe/futbol-internacional/copa-sudamericana">Copa Sudamericana</a></li>
-                  </ul>
-                </li>
-                <li><strong>Deportes hoy</strong>
-                  <ul>
-                    <li><a href="https://libero.pe/deportes/ufc">UFC</a></li>
-                    <li><a href="https://libero.pe/deportes/basquet">NBA</a></li>
-                    <li><a href="https://libero.pe/deportes/automovilismo">Fórmula 1</a></li>
-                    <li><a href="https://libero.pe/deportes/nfl">NFL</a></li>
-                  </ul>
-                </li>
-                <li><strong>Ocio</strong>
-                  <ul>
-                    <li><a href="https://libero.pe/ocio/redes-sociales">Redes sociales</a></li>
-                    <li><a href="https://libero.pe/ocio/series-cine">Series y Cine</a></li>
-                    <li><a href="https://libero.pe/ocio/curiosidades">Curiosidades</a></li>
-                    <li><a href="https://libero.pe/tecnologia">Tecnología</a></li>
+                  <ul class="list-unstyled ps-3">
+                    <li><a class="text-white text-decoration-none" href="#">Copa Libertadores</a></li>
+                    <li><a class="text-white text-decoration-none" href="#">Champions League</a></li>
+                    <li><a class="text-white text-decoration-none" href="#">Copa Sudamericana</a></li>
                   </ul>
                 </li>
               </ul>
             </div>
-      
-            <!-- Redes sociales y contacto -->
-            <div class="col-md-6 col-lg-4 mb-4">
-              <h5>Nuestras redes sociales</h5>
-              <div class="d-flex gap-2 mb-3">
-                <a href="https://www.facebook.com/diariolibero/" target="_blank" rel="nofollow">
-                  <img src="https://libero.pe/static/images/icon_fb.svg" alt="Facebook" width="20" height="20">
-                </a>
-                <a href="https://twitter.com/diario_libero" target="_blank" rel="nofollow">
-                  <img src="/static/images/icon_tw.svg" alt="Twitter" width="20" height="20">
-                </a>
-                <a href="https://t.me/diarioliberope" target="_blank" rel="nofollow">
-                  <img src="/static/images/Path-3.svg" alt="Telegram" width="20" height="20">
-                </a>
-                <a href="https://www.tiktok.com/@libero.pe" target="_blank" rel="nofollow">
-                  <img src="/static/images/icon_tiktok.svg" alt="TikTok" width="20" height="20">
-                </a>
-              </div>
-      
-              <form class="d-flex mb-3" role="search">
-                <input type="search" class="form-control me-2" placeholder="Buscar..." aria-label="Buscar">
-                <button class="btn btn-outline-secondary" type="submit">Buscar</button>
-              </form>
-      
-              <div>
-                <a href="/contacto" class="d-block">Contáctanos</a>
-                <a href="/quienes-somos" class="d-block">Quiénes somos</a>
-                <a href="/politicas-y-estandares" class="d-block">Políticas y estándares</a>
-                <a href="/terminos-de-uso" class="d-block">Términos y condiciones</a>
-              </div>
-            </div>
-      
-            <!-- Marcas -->
-            <div class="col-lg-4 mb-4">
-              <h5>Visita también</h5>
+            <div class="col-6">
               <ul class="list-unstyled">
-                <li><a href="https://larepublica.pe/" target="_blank">Grupo La República</a></li>
-                <li><a href="https://elpopular.pe/" target="_blank">El Popular</a></li>
-                <li><a href="https://libero.pe/" target="_blank">Libero</a></li>
-                <li><a href="https://libero.pe/esports/" target="_blank">Libero E-sports</a></li>
-                <li><a href="https://wapa.pe/" target="_blank">Wapa</a></li>
-                <li><a href="https://buenazo.pe/" target="_blank">Buenazo</a></li>
-                <li><a href="https://larepublica.pe/verificador/" target="_blank">Verificador LR</a></li>
-                <li><a href="https://perulegal.larepublica.pe/" target="_blank">Perú Legal</a></li>
-                <li><a href="https://lrmas.larepublica.pe/" target="_blank">LRMAS La República</a></li>
-                <li><a href="https://cuponidad.pe/" target="_blank">Cuponidad</a></li>
+                <li><strong>Deportes hoy</strong>
+                  <ul class="list-unstyled ps-3">
+                    <li><a class="text-white text-decoration-none" href="#">UFC</a></li>
+                    <li><a class="text-white text-decoration-none" href="#">NBA</a></li>
+                    <li><a class="text-white text-decoration-none" href="#">Fórmula 1</a></li>
+                    <li><a class="text-white text-decoration-none" href="#">NFL</a></li>
+                  </ul>
+                </li>
+                <li><strong>Ocio</strong>
+                  <ul class="list-unstyled ps-3">
+                    <li><a class="text-white text-decoration-none" href="https://libero.pe/ocio/redes-sociales">Redes sociales</a></li>
+                    <li><a class="text-white text-decoration-none" href="https://libero.pe/ocio/series-cine">Series y Cine</a></li>
+                    <li><a class="text-white text-decoration-none" href="https://libero.pe/ocio/curiosidades">Curiosidades</a></li>
+                    <li><a class="text-white text-decoration-none" href="https://libero.pe/tecnologia">Tecnología</a></li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-      </footer>
-      
+  
+        <!-- Redes sociales y contacto -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <h5 class="mb-3">Nuestras redes sociales</h5>
+          <div class="d-flex gap-3 mb-3">
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=ffffff" alt="Facebook" width="32" height="32">
+            </a>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="https://img.icons8.com/?size=100&id=yoQabS8l0qpr&format=png&color=ffffff" alt="Twitter" width="32" height="32">
+            </a>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="https://img.icons8.com/?size=100&id=oWiuH0jFiU0R&format=png&color=ffffff" alt="Telegram" width="32" height="32">
+            </a>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="https://img.icons8.com/?size=100&id=118640&format=png&color=ffffff" alt="TikTok" width="32" height="32">
+            </a>
+          </div>
+  
+          <form class="d-flex mb-3" role="search">
+            <input type="search" class="form-control me-2" placeholder="Buscar..." aria-label="Buscar">
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+  
+          <div>
+            <a href="#" class="d-block text-white text-decoration-none mb-1">Contáctanos</a>
+            <a href="#" class="d-block text-white text-decoration-none mb-1">Quiénes somos</a>
+            <a href="#" class="d-block text-white text-decoration-none mb-1">Políticas y estándares</a>
+            <a href="#" class="d-block text-white text-decoration-none mb-1">Términos y condiciones</a>
+          </div>
+        </div>
+  
+        <!-- Marcas -->
+        <div class="col-lg-4 mb-4">
+          <h5 class="mb-3">Visita también</h5>
+          <ul class="list-unstyled">
+            <li><a class="text-white text-decoration-none" href="#">Grupo La República</a></li>
+            <li><a class="text-white text-decoration-none" href="#">El Popular</a></li>
+            <li><a class="text-white text-decoration-none" href="#">Libero</a></li>
+            <li><a class="text-white text-decoration-none" href="#">Libero E-sports</a></li>
+            <li><a class="text-white text-decoration-none" href="#">Wapa</a></li>
+            <li><a class="text-white text-decoration-none" href="#">Buenazo</a></li>
+            <li><a class="text-white text-decoration-none" href="#">Verificador LR</a></li>
+            <li><a class="text-white text-decoration-none" href="#">Perú Legal</a></li>
+            <li><a class="text-white text-decoration-none" href="#">LRMAS La República</a></li>
+            <li><a class="text-white text-decoration-none" href="#">Cuponidad</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  

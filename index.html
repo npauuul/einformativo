@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EInformativo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Headerr -->
+    <div id="header"></div>
+
+    <div>
+        <h1>Contenido</h1>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#header').load('partials/header.html');
+            $('#footer').load('partials/footer.html');
+        });
+    </script>
+</body>
+</html>
